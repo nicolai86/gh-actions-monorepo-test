@@ -1,7 +1,12 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"os"
+	"strings"
+)
 
 func main() {
-	fmt.Println("Action B: Hello World")
+	time := strings.Join(os.Args[1:], " ")
+	fmt.Printf("Action B: %s\n", time)
 }
