@@ -5,4 +5,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: ./action-a
+        id: time
       - uses: ./action-b
+        with:
+          time: ${{ steps.time.outputs.time }}

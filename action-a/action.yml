@@ -1,6 +1,5 @@
 name: "action-a"
 description: "Action A"
-inputs:
 outputs:
   time:
     description: 'RFC 3339'

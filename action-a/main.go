@@ -2,10 +2,11 @@ package main
 
 import (
 	"fmt"
+	"os"
 	"time"
 )
 
 func main() {
 	fmt.Println("Action A")
-	fmt.Printf(`echo "::set-output name=time::%s"\n`, time.Now().Format(time.RFC3339))
+	fmt.Fprintf(os.Stdout, "::set-output name=time::%s\n", time.Now().Format(time.RFC3339))
 }
