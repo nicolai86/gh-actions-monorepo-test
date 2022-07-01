@@ -1,0 +1,5 @@
+name: "action-b"
+description: "Action B"
+runs:
+  using: docker
+  image: Dockerfile
